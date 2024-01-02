@@ -4,10 +4,12 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Getter @Setter
 @NoArgsConstructor
+@ToString
 public class Worker extends BaseEntity<Long>{
 
     @Column(unique = true,updatable = false,nullable = false,length = 25)
